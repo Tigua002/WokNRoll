@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WokNRoll | Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bdf">
+    <div id="header_log">
+        <h1 id="title">Wok N Roll</h1>
+        <div id="nav_bar">
+            <a href="index.html" class="link_line">
+                <h1 class="navigation">Home</h1>
+            </a>
+            <a href="meny.html" class="link_line">
+                <h1 class="navigation">Meny</h1>
+            </a>
+            <a href="omOss.html" class="link_line">
+                <h1 class="navigation">Om oss</h1>
+            </a>
+            <a href="location.html" class="link_line">
+                <h1 class="navigation">Location</h1>
+            </a>
+            <a href="cart.html" class="link_line">
+                <h1 class="order">Kurv</h1>
+            </a>
+        </div>
+    </div>
+
+    <div id="cart_holder">
+        <div id="cart_top_holder">
+            <h1 id="cart_title">SHOPPING BAG</h1>
+            <h1 id="cart_diff_amount">| 2 ITEMS</h1>
+        </div>
+        <div id="cart_items_holder">
+
+            <hr class="cart_split">
+        </div>
+        <div id="details_holder">
+            <div id="details_border">
+                <h1 id="cart_summary_title">Bestilling</h1>
+                <div id="summary_items_holder">
+                </div>
+                <div id="subtotal_holder">
+                    <h1 id="subtotal_tekst">Subtotal</h1>
+                    <h1 id="subtotal">0.00 Kr</h1>
+                </div>
+                <h1 id="checkout_button" onclick="show_alert()">CHECKOUT</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="splitter_menu">
+    <div id="footer">
+        <div id="foot_holder">
+            <div id="foot_packer">
+                <div id="foot_content">
+                    <div id="foot_general">
+                        <h1 id="foot_restaurant">Wok N Roll</h1>
+                        <h1 class="foot_text">VI DRIVER DEN LILLE RESTURANTEN MED ET ØNSKE</h1>
+                    </div>
+                    <div id="foot_navbar">
+                        <h1 class="foot_bold">Utforsk</h1>
+                        <a href="index.html" class="foot_link">
+                            <h1 class="foot_text">Hjem</h1>
+                        </a>
+                        <a href="omOss.html" class="foot_link">
+                            <h1 class="foot_text">Om Oss</h1>
+                        </a>
+                        <a href="meny.html" class="foot_link">
+                            <h1 class="foot_text">Meny</h1>
+                        </a>
+                        <a href="location.html" class="foot_link">
+                            <h1 class="foot_text">Location</h1>
+                        </a>
+                        <a href="log_in.html" class="foot_link">
+                            <h1 class="foot_text">Log in</h1>
+                        </a>
+                    </div>
+                    <div id="foot_location">
+                        <h1 class="foot_bold">Besøk</h1>
+                        <h1 class="foot_text">Ekebergveien 230</h1>
+                        <h1 class="foot_text">1166 Oslo</h1>
+                    </div>
+                    <div id="foot_links">
+                        <h1 class="foot_bold">Følg Oss</h1>
+                        <a href="https://www.facebook.com/woknroll.no" class="foot_link" target="_blank">
+                            <h1 class="foot_text">Facebook</h1>
+                        </a>
+                        <a href="https://www.instagram.com/woknroll.no/" class="foot_link" target="_blank">
+                            <h1 class="foot_text">Instagram</h1>
+                        </a>
+                        <a href="" class="foot_link" target="_blank">
+                            <h1 class="foot_text">Twitter</h1>
+                        </a>
+                    </div>
+                    <div id="foot_other">
+                        <h1 class="foot_bold">Legal</h1>
+                        <h1 class="foot_text">Terms</h1>
+                        <h1 class="foot_text">Privacy</h1>
+                    </div>
+                </div>
+                <div id="foot_next_menu">
+                    <a href="omOss.html" class="link">
+                        <h1 id="foot_next">Neste Meny</h1>
+                    </a>
+                </div>
+            </div>
+            <div id="foot_creators">
+                <h1 id="foot_credits">Made by Oskar Fredrik Kleppe, Timur Gusarov</h1>
+            </div>
+        </div>
+    </div>
+
+    <dialog id="alerts">
+        <h1 id="alert_title">VAR DETTE ALT?</h1>
+        <div id="alert_btn_holder">
+            <h1 class="alert_btn">JA</h1>
+            <h1 class="alert_btn" onclick="close_modal()">NEI</h1>
+        </div>
+        <h1 id="alert_sug_title">ANDRE TING DU KAN LIKE</h1>
+        <hr id="al_slitter">
+        <div class="al_row">
+            <div class="al_showcase">
+                <img class="al_img" src="pictures/Laks_nigiri_maki.png" alt="Laks_nigiri_maki">
+                <div class="al_holder">
+                    <h1 class="al_name">LAKS NIGIRI</h1>
+                    <h1 class="al_price">80kr</h1>
+                </div>
+                <h1 class="al_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi
+                    pariatur maiores!
+                </h1>
+                <h1 class="al_add">ADD</h1>
+            </div>
+            <div class="al_showcase">
+                <img class="al_img" src="pictures/Laks_nigiri_maki.png" alt="Laks_nigiri_maki">
+                <div class="al_holder">
+                    <h1 class="al_name">LAKS NIGIRI</h1>
+                    <h1 class="al_price">80kr</h1>
+                </div>
+                <h1 class="al_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi
+                    pariatur maiores!
+                </h1>
+                <h1 class="al_add">ADD</h1>
+            </div>
+            <div class="al_showcase">
+                <img class="al_img" src="pictures/Laks_nigiri_maki.png" alt="Laks_nigiri_maki">
+                <div class="al_holder">
+                    <h1 class="al_name">LAKS NIGIRI</h1>
+                    <h1 class="al_price">80kr</h1>
+                </div>
+                <h1 class="al_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi
+                    pariatur maiores!
+                </h1>
+                <h1 class="al_add">ADD</h1>
+            </div>
+        </div>
+    </dialog>
+
+
+
+    <dialog id="accepted">
+        <img src="pictures/approved.png" alt="" class="accept_image">
+        <h1 id="accepted_title">SUCCESS</h1>
+        <h1 class="accept_tekst">Tusen takk for din bestilling</h1>
+        <h1 class="accept_tekst">Din bestlinning er ferdig om 20-40 minutter</h1>
+        <h1 id="accept_button">GÅ TILBAKE</h1>
+
+    </dialog>
+
+</body>
+<script src="script.js"></script>
+<script src="cart.js"></script>
+
+</html>

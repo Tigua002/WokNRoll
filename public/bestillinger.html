@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WokNRoll | Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bdf">
+    <div id="header_log">
+        <h1 id="title">Wok N Roll</h1>
+        <div id="nav_bar">
+            <a href="index.html" class="link_line">
+                <h1 class="navigation">Home</h1>
+            </a>
+            <a href="meny.html" class="link_line">
+                <h1 class="navigation">Meny</h1>
+            </a>
+            <a href="omOss.html" class="link_line">
+                <h1 class="navigation">Om oss</h1>
+            </a>
+            <a href="location.html" class="link_line">
+                <h1 class="navigation">Location</h1>
+            </a>
+            <a href="cart.html" class="link_line">
+                <h1 class="order">Kurv</h1>
+            </a>
+        </div>
+    </div>
+
+    <hr class="splitter_neutral">
+
+    <div id="menu_shortcut_holder">
+        <h1 id="menu_title">Bestillinger </h1>
+        <h1 id="MENU_tekst">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga perferendis esse quod illo
+            neque eos fugit fugiat officiis voluptatum at!</h1>
+    </div>
+    <hr class="splitter_neutral">
+
+    <div id="order_holder">
+    </div>
+
+    <hr class="splitter_top">
+
+    <div id="footer">
+        <div id="foot_holder">
+            <div id="foot_packer">
+                <div id="foot_content">
+                    <div id="foot_general">
+                        <h1 id="foot_restaurant">Wok N Roll</h1>
+                        <h1 class="foot_text">VI DRIVER DEN LILLE RESTURANTEN MED ET ØNSKE</h1>
+                    </div>
+                    <div id="foot_navbar">
+                        <h1 class="foot_bold">Utforsk</h1>
+                        <a href="index.html" class="foot_link">
+                            <h1 class="foot_text">Hjem</h1>
+                        </a>
+                        <a href="omOss.html" class="foot_link">
+                            <h1 class="foot_text">Om Oss</h1>
+                        </a>
+                        <a href="meny.html" class="foot_link">
+                            <h1 class="foot_text">Meny</h1>
+                        </a>
+                        <a href="location.html" class="foot_link">
+                            <h1 class="foot_text">Location</h1>
+                        </a>
+                        <a href="log_in.html" class="foot_link">
+                            <h1 class="foot_text">Log in</h1>
+                        </a>
+                    </div>
+                    <div id="foot_location">
+                        <h1 class="foot_bold">Besøk</h1>
+                        <h1 class="foot_text">Ekebergveien 230</h1>
+                        <h1 class="foot_text">1166 Oslo</h1>
+                    </div>
+                    <div id="foot_links">
+                        <h1 class="foot_bold">Følg Oss</h1>
+                        <a href="https://www.facebook.com/woknroll.no" class="foot_link" target="_blank">
+                            <h1 class="foot_text">Facebook</h1>
+                        </a>
+                        <a href="https://www.instagram.com/woknroll.no/" class="foot_link" target="_blank">
+                            <h1 class="foot_text">Instagram</h1>
+                        </a>
+                        <a href="" class="foot_link" target="_blank">
+                            <h1 class="foot_text">Twitter</h1>
+                        </a>
+                    </div>
+                    <div id="foot_other">
+                        <h1 class="foot_bold">Legal</h1>
+                        <h1 class="foot_text">Terms</h1>
+                        <h1 class="foot_text">Privacy</h1>
+                    </div>
+                </div>
+                <div id="foot_next_menu">
+                    <a href="omOss.html" class="link">
+                        <h1 id="foot_next">Neste Meny</h1>
+                    </a>
+                </div>
+            </div>
+            <div id="foot_creators">
+                <h1 id="foot_credits">Made by Oskar Fredrik Kleppe, Timur Gusarov</h1>
+            </div>
+        </div>
+    </div>
+
+    <dialog id="order_overlay">
+        <div id="transition">
+            <div id="header_log">
+                <h1 id="overlay_ht">
+                    < TILBAKE</h1>
+                        <div id="nav_bar">
+                            <a href="index.html" class="link_line">
+                                <h1 class="navigation">Home</h1>
+                            </a>
+                            <a href="meny.html" class="link_line">
+                                <h1 class="navigation">Meny</h1>
+                            </a>
+                            <a href="omOss.html" class="link_line">
+                                <h1 class="navigation">Om oss</h1>
+                            </a>
+                            <a href="location.html" class="link_line">
+                                <h1 class="navigation">Location</h1>
+                            </a>
+                            <a href="cart.html" class="link_line">
+                                <h1 class="order">Kurv</h1>
+                            </a>
+                        </div>
+            </div>
+            <div id="cart_holder">
+                <div id="overlay_title">
+                    <h1 id="order_over_title">BESTILLING NR 1 </h1>
+                </div>
+                <div id="overlay_items">
+                    <hr class="overlay_split">
+                </div>
+                <div id="overlay_action_holder">
+                    <div id="overlay_holder">
+                        <div class="action_items">
+
+                        </div>
+                        <h1 id="overlay_btn">FERDIG</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <dialog id="confirm_holder">
+            <h1 class="confirm_title">Er du sikker?</h1>
+            <h1 class="confirm_tekst">Du skal til ferdiggjøre bestillingen</h1>
+            <div id="confirm_div">
+                <h1 class="confirm_btn">Fortsett</h1>
+                <h1 class="confirm_btn" onclick="close_confirm()">AVBRYT</h1>
+            </div>
+        </dialog> 
+    </dialog>
+</body>
+<script src="bestillinger.js"></script>
+
+</html>
