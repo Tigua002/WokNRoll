@@ -2,13 +2,15 @@
     font-family: lato_thin;
     src: url(fonts/Lato/Lato-Light.ttf);
 }
-html{
+
+html {
     margin: 0%;
     padding: 0%;
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden;
 }
+
 body {
     background-color: black;
     margin: 0%;
@@ -41,7 +43,7 @@ body {
     position: static;
 }
 
-#menuHolder{
+#menuHolder {
     width: 0%;
     overflow: hidden;
     height: 100vh;
@@ -54,52 +56,62 @@ body {
     transition: .5s ease-in-out;
     left: 0;
     top: 0;
-    margin-left: 0%;
+    margin: 0%;
+
 }
 
-#menuOtherLink{
+#menuOtherLink {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
-    overflow: hidden    ;
+    overflow: hidden;
 }
-#menuClose{
+
+#menuClose {
     color: white;
     font-size: 13vw;
     margin: 0%;
     padding: 0%;
     padding-left: 3vw;
 }
-#menuNavHolder{
+
+#menuNavHolder {
     margin-left: 3vw;
     font-weight: 100;
     font-size: 3.5vw;
 
 }
-.menuNavigation{
+
+.menuNavigation {
     overflow: hidden;
     height: 5vh;
 }
-#menuLine{
+
+#menuLine {
     width: 100%;
 
 }
-.menuOtherTitle{
+
+.menuOtherTitle {
     margin-left: 3vw;
     font-size: 7vw;
 }
-.menuOtherBtns{
+
+.menuOtherBtns {
     margin-left: 3vw;
     font-size: 5vw;
 }
-.hamburgerButton{
+
+.hamburgerButton {
     display: none;
 }
-.menuLink{
+
+.menuLink {
     text-decoration: none;
     color: white;
 }
+
 #nav_bar {
     display: flex;
     justify-content: space-between;
@@ -184,7 +196,8 @@ body {
 }
 
 
-#fill {
+#fill,
+#fill_menu {
     width: 99%;
     height: 100vh;
 }
@@ -820,6 +833,10 @@ input#checkbox {
     width: 55%;
 }
 
+.menu_hider {
+    display: none;
+}
+
 #ms_width2 {
     width: 45%;
 }
@@ -1291,13 +1308,14 @@ input#checkbox {
 
     max-height: none;
 }
-#order_overlay::backdrop{
+
+#order_overlay::backdrop {
     display: none;
 }
 
-#transition{
+#transition {
     background-color: black;
-    transition: 1s; 
+    transition: 1s;
     overflow: scroll;
     overflow-x: hidden;
     margin: 0%;
@@ -1354,11 +1372,13 @@ input#checkbox {
 .overlay_desc {
     font-size: 1.1vw;
 }
-.over_amount_div{
+
+.over_amount_div {
     display: flex;
     font-size: 1vw;
 }
-.over_amount{
+
+.over_amount {
     font-size: 1.3vw;
     font-weight: 400;
     margin-right: 2vw;
@@ -1373,10 +1393,12 @@ input#checkbox {
     margin: 3vw;
     padding: 0%;
 }
-#overlay_ht{
+
+#overlay_ht {
     cursor: pointer;
 }
-#overlay_holder{
+
+#overlay_holder {
     width: 30vw;
     display: flex;
     flex-direction: column;
@@ -1387,6 +1409,7 @@ input#checkbox {
     justify-content: center;
     align-items: center;
 }
+
 .action_items {
     width: 30vw;
     display: flex;
@@ -1471,7 +1494,8 @@ input#checkbox {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.over_fill{
+
+.over_fill {
     width: 10vh;
     height: 10vh;
 }
@@ -1490,7 +1514,8 @@ input#checkbox {
     font-size: .6vw;
     height: 40%;
 }
-#overlay_btn{
+
+#overlay_btn {
     border: solid white 1px;
     font-size: 2vw;
     padding: 4vh;
@@ -1501,7 +1526,7 @@ input#checkbox {
 
 }
 
-#accepted{
+#accepted {
     background-color: #151313;
     color: white;
     border: solid white 1px;
@@ -1512,10 +1537,12 @@ input#checkbox {
     padding: 2vw;
     border-radius: 2vw;
 }
-.accept_image{
+
+.accept_image {
     width: 10vw;
 }
-#accept_button{
+
+#accept_button {
     cursor: pointer;
     padding: 2vw;
     border: solid white 1px;
@@ -1523,11 +1550,13 @@ input#checkbox {
     padding-top: 1vw;
     padding-bottom: 1vw;
 }
-#accepted::backdrop{
+
+#accepted::backdrop {
     opacity: .2;
     background-color: white;
 }
-#confirm_holder{
+
+#confirm_holder {
     width: 40vw;
     background-color: #151313;
     color: white;
@@ -1539,27 +1568,32 @@ input#checkbox {
     border-radius: 2vw;
     padding: 2vw;
 }
-#confirm_holder::backdrop{
+
+#confirm_holder::backdrop {
     opacity: .2;
     background-color: white;
 }
-.confirm_title{
+
+.confirm_title {
     border-bottom: solid white 1px;
     width: 30%;
     font: 2.5vw;
     text-align: center;
 }
-.confirm_tekst{
+
+.confirm_tekst {
     font-size: 3vw;
     font-weight: 100;
     text-align: center;
 }
-#confirm_div{
+
+#confirm_div {
     display: flex;
     justify-content: space-around;
     width: 100%;
 }
-.confirm_btn{
+
+.confirm_btn {
     color: white;
     border: solid white 1px;
     border-radius: 2vw;
@@ -1575,116 +1609,630 @@ input#checkbox {
         margin-top: 190vh;
     }
 
-    
+
 }
+
 @media screen and (max-width: 500px) {
-    #header{
+
+    #header,
+    #header_log {
         border-bottom: solid #fff 1px;
         width: 93%;
     }
-    #title{
-        font-size: 2.3vh;
+
+    #title {
+        font-size: 5vw;
     }
-    #index_welcome_tekst{
-        font-size: 3vh;
+
+    #index_welcome_tekst {
+        font-size: 6vw;
     }
-    #index_tekst{
+
+    #index_tekst {
         width: 90%;
-        font-size: 1.6vh;
+        font-size: 4vw;
     }
-    #index_menu_btn, #index_order_btn{
-        font-size: 2.6vh
+
+    #index_menu_btn,
+    #index_order_btn {
+        font-size: 5vw
     }
-    .hamburgerButton{
+
+    .hamburgerButton {
         display: block;
         font-size: 40px;
     }
-    #menuHolder{
+
+    #menuHolder {
         background-color: #151313;
+        border: none;
     }
-    #index_footer{
+
+    #index_footer,
+    #footer {
         width: 90%;
         height: auto;
         flex-direction: row;
+        margin-top: 95vw;
     }
-    #foot_packer{
+
+    #footer {
+        margin-top: 90vw;
+    }
+
+    #foot_packer {
         flex-direction: column;
     }
-    #foot_content{
+
+    #foot_content {
         flex-direction: column;
     }
-    #foot_next{
+
+    #foot_next {
         width: 10%;
     }
-    .foot_bold{
+
+    .foot_bold {
         font-size: 5vw;
     }
-    .foot_text, .foot_link{
+
+    .foot_text,
+    .foot_link {
         font-size: 4vw;
         width: 40vw;
     }
-    #foot_holder{
+
+    #foot_holder {
         height: auto;
     }
-    #nav_bar{
+
+    #foot_next {
+        margin-top: 5vw;
+        font-size: 4vw;
+        width: 25vw;
+    }
+
+    #foot_credits {
+        font-size: 4vw;
+    }
+
+    #nav_bar {
         display: none;
     }
-    #mini_about_holder{
+
+    #fill_menu {
+        height: 0%;
+        width: 0%;
+    }
+
+    .menu_loca {
+        margin-top: 140vw;
+    }
+
+    #mini_about_holder {
         flex-direction: column-reverse;
     }
-    #ma_pics{
+
+    #ma_pics {
         display: flex;
         justify-content: space-around;
     }
 
-    .ma_img, .ma_maki{
+    .ma_img,
+    .ma_maki {
         width: 35vw;
     }
-    .ma_sushi{
+
+    .ma_sushi {
         display: none;
     }
-    #ma_title{
+
+    #ma_title {
         font-size: 6vw;
     }
-    #ma_tekst{
+
+    #ma_tekst {
         width: 80%;
     }
-    .ma_tekst{
+
+    .ma_tekst {
         font-size: 4vw;
         width: 100%;
         height: auto;
         padding: 0%;
         margin: 0%;
     }
-    #ma_btn{
+
+    #ma_btn {
         width: 25%;
         font-size: 4vw;
     }
-    #reveiws{
+
+    #reveiws {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #reveiw_holder{
+
+    #reveiw_holder {
         justify-content: center;
     }
-    .review{
-        margin: 2vh;
+
+    .review {
+        margin: 4vw;
         width: 80%;
     }
-    .profile_pics{
-        width: 30vw     ;
+
+    .profile_pics {
+        width: 30vw;
     }
-    .rev_name{
+
+    .rev_name {
         font-size: 4vw;
     }
-    .kunde{
+
+    .kunde {
         font-size: 3.5vw;
     }
-    .review_tekst{
+
+    .review_tekst {
         font-size: 2.7vw;
         margin: 4vw;
         font-weight: 100;
+    }
+
+    #index_time_holder {
+        top: 20%;
+        left: 10%;
+    }
+
+    #itTitle,
+    #itDesc {
+        font-size: 2vw;
+        margin-top: 2vw;
+        padding-bottom: 4vw;
+    }
+
+    #mlImg {
+        height: 80vw;
+        margin-top: 10vw;
+    }
+
+    #it_menu_btn {
+        font-size: 3vw;
+    }
+
+    .itDays,
+    .itTime {
+        font-size: 1.5vw;
+    }
+
+    #it_tekst {
+        font-size: 2vw;
+        width: 80%;
+        margin: 0%;
+        margin-right: 10vw;
+        text-align: center;
+    }
+
+    #delete {
+        display: none;
+    }
+
+    #menu_shortcut_holder {
+        margin: 0%;
+        width: auto;
+    }
+
+    #ms_width1,
+    #ms_width2 {
+        width: 65%;
+    }
+
+    #menu_title {
+        font-size: 5vw;
+        margin: 0%;
+        margin-top: 8vw;
+    }
+
+    #MENU_tekst {
+        font-size: 3vw;
+    }
+
+    .ms_holder {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .menu_short {
+        width: 15vw;
+        font-size: 5vw;
+    }
+
+    .menu_hider {
+        display: block;
+    }
+
+    #omOss_img {
+        background: url(pictures/shop_view.jpg);
+        min-height: 100vw;
+        width: 100%;
+        background-clip: padding-box;
+        background-position: -130vw;
+    }
+
+    #omOss_holder {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #oo_welcome_tekst {
+        font-size: 6vw;
+    }
+
+    #oo_tekst {
+        font-size: 4vw;
+    }
+
+    .about_chef_holder {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .about_pics {
+        width: 100%;
+        opacity: .6;
+    }
+
+    .ac_text_holder {
+        width: 100%;
+    }
+
+    .at_header {
+        width: 90%;
+        font-size: 5vw;
+    }
+
+    .at_tekst {
+        font-size: 4vw;
+    }
+
+    #ab_store_owner {
+        display: none;
+    }
+
+    #our_thoughts {
+        flex-direction: column-reverse;
+    }
+
+    #our_thoughts_img {
+        margin-top: 0%;
+        margin-bottom: 7vw;
+    }
+
+    #abouts_us_split {
+        margin-bottom: 0%;
+    }
+
+    #about_bgimg {
+        background: url(pictures/customerService.jpg);
+        background-size: cover;
+        background-position: -25vw;
+        height: 90vw;
+        background-repeat: no-repeat;
+    }
+
+    #af_packing {
+        margin-top: 8vw;
+    }
+
+    #af_title {
+        font-size: 3.5vw;
+    }
+
+    .af_tekst {
+        font-size: 3vw;
+    }
+
+    #af_menu {
+        margin-top: 7vw;
+        font-size: 4vw;
+    }
+
+    #about_pusher {
+        margin-top: 125vw;
+    }
+
+    #location_holder {
+        flex-direction: column-reverse;
+    }
+
+    #location_pic {
+        width: 85vw;
+    }
+
+    #location_text {
+        width: 100%;
+        margin-left: 3vw;
+    }
+
+    .location_title {
+        font-size: 5vw;
+        border-bottom: solid white 2px;
+        width: 55vw;
+    }
+
+    .location_mt {
+        font-size: 4vw;
+        margin-top: 5vw;
+    }
+
+    #location_btn {
+        width: 35vw;
+        margin-top: 10vw;
+        margin-left: 0%;
+        text-align: center;
+        font-weight: 100;
+        padding: 3vw;
+        border: solid white .1px;
+        font-size: 5vw;
+    }
+
+    #location_split {
+        margin-bottom: 0%;
+    }
+
+    #cart_holder {
+        flex-direction: column;
+    }
+
+    #cart_top_holder {
+        margin-bottom: 2vw;
+        margin-top: 1vw;
+    }
+
+    #cart_title,
+    #cart_diff_amount {
+        font-size: 4.5vw;
+    }
+
+    .cart_split {
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    .cart_item {
+        width: 100%;
+    }
+
+    .cart_image {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .ci_info {
+        width: 30%;
+    }
+
+    .ci_title {
+        font-size: 3vw;
+    }
+
+    .ci_desc {
+        font-size: 2vw;
+        font-weight: 200;
+    }
+
+    .ci_amount_holder {
+        width: 15%;
+        margin-left: 2vw;
+        height: auto;
+    }
+
+    .ci_plus,
+    .ci_minus {
+        width: 3vw;
+        height: 3vw;
+        font-size: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: .5;
+    }
+
+    .cia_packer {
+        align-items: flex-end;
+        height: auto;
+    }
+
+    .item_amount {
+        font-size: 4vw;
+        margin-bottom: 1vw;
+    }
+
+    .remove_tekst {
+        font-size: 2.5vw;
+    }
+
+    .remove_x {
+        font-size: 4vw;
+    }
+
+    #details_holder {
+        width: 100%;
+    }
+
+    #details_border {
+        width: 80%;
+        margin-top: 5vw;
+        border-radius: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    #cart_summary_title {
+        margin-bottom: 1vw;
+        font-size: 7vw;
+        font-weight: 300;
+        padding: 1vw;
+    }
+    #summary_items_holder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .si_name,
+    .si_price {
+        font-size: 5vw;
+        margin: 2vw;
+    }
+
+    #subtotal_tekst, #subtotal {
+        font-size: 4vw;
+        font-weight: 100;
+        margin: 2vw;
+    }
+    #checkout_button{
+        font-size: 4vw;
+        border-radius: 5vw;
+    }
+    #log_in_body{
+        height: 50vh;
+    }
+    #log_in_holder{
+        width: 80%;
+        height: auto;
+        margin-top: 10vw;
+        border: solid white 1px;
+        border-radius: 6vw;
+    }
+    #login_profile{
+        width: 20vw;
+        height: auto;
+    }
+    .user_pass, #show_pass_holder{
+        width: 80%;
+        height: auto;
+    }
+    #show_pass_holder{
+        align-items: center;
+    }
+    #username, #password{
+        font-size: 4vw;
+    }
+    #checkbox_tekst{
+        font-size: 3vw;
+    }
+    input#checkbox{
+        width: 3vw;
+        height: 3vw;
+    }
+    #login_button{
+        padding: 2vw;
+        margin-top: 5vw;
+        font-size: 6vw;
+        width: 60vw;
+        height: auto;
+        border: solid white .1px;
+        border-radius: 6vw;
+    }
+    #order_holder{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .orders{
+        width: 90%;
+    }
+    .order_title{
+        font-size: 6vw;
+        font-weight: 100;
+    }
+    .order_name, .order_amount{
+        font-size: 4vw;
+        font-weight: 100;
+        margin-bottom: 1vw;
+    }
+    .order_name_title, .order_amount_title{
+        font-size: 5vw;
+    }
+    .order_amount_nr, .order_amount_total{
+        font-size: 4vw;
+        font-weight: 100;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    .order_btn{
+        font-size: 4vw;
+        margin-top: 6vw;
+        margin-bottom: 4vw;
+        width: 60%;
+        padding: 2vw;
+        border-radius: 4vw;
+    }
+    .order_list, .order_title, .order_total{
+        width: 85%;
+        text-align: center;
+    }
+    #alerts{
+        height: 40%;
+        border-radius: 10vw;
+        width: 80%;
+        margin-left: 3%;
+    }
+    #alert_title{
+        font-size: 4vw;
+        width: 40%;
+        margin-top: 0%;
+    }
+    .alert_btn{
+        font-size: 4vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    #alert_sug_title{
+        font-size: 3vw;
+    }
+    #al_slitter{
+        width: 60%;
+        margin: 0%;
+        margin-bottom: 3vw;
+        
+    }
+    .al_name, .al_price{
+        font-size: 2vw;
+    }
+    .al_desc{
+        font-size: 1.6vw;
+        padding-top: 5%;
+    }
+    .al_add{
+        height: 5vw;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 3vw;
+    }
+    #accepted{
+        width: 70%;
+        margin-left: 7%;
+        border-radius: 13vw;
+        padding: 4vw;
+        border: solid 1px #817D7D;
+    }
+    .accept_image{
+        width: 20vw;
+    }
+    .accept_tekst{
+        font-size: 3.5vw;
+    }
+    #accept_button{
+        font-size: 3.5vw;
+        margin-bottom: 7vw;
+        border: solid 1px #817D7D;
     }
 }

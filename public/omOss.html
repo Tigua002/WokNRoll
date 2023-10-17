@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WokNRoll | Om Oss</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #footer{
+            margin-top: 0%;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,6 +34,7 @@
                 <h1 class="order">Kurv</h1>
             </a>
         </div>
+        <span class="hamburgerButton">&#9776;</span>
     </div>
     <div id="omOss_holder">
         <div id="omOss_packer">
@@ -59,9 +65,9 @@
         <h1 id="ab_store_owner">Le T. T. store owner</h1>
     </div>
 
-    <hr class="splitter_neutral">
+    <hr class="splitter_neutral" id="abouts_us_split">
 
-    <div class="about_chef_holder">
+    <div class="about_chef_holder" id="our_thoughts">
         <div class="ac_text_holder">
             <h1 class="at_header" id="about_second">LITT OM VÅRE TANKER</h1>
             <h1 class="at_tekst">Etter mange år i mat bransjen, oppdager vi at sunn og
@@ -76,7 +82,7 @@
                 med god samvittighet.</h1>
         </div>
         <div class="ac_img_holder">
-            <img src="pictures/cooking.jpg" alt="" class="about_pics">
+            <img src="pictures/cooking.jpg" alt="" class="about_pics" id="our_thoughts_img">
         </div>
     </div>
 
@@ -96,8 +102,9 @@
             </a>
         </div>
     </div>
-    <hr class="pusher">
-    <div id="footer">
+    <hr class="pusher" id="about_pusher">
+
+    <div id="footer" >
         <div id="foot_holder">
             <div id="foot_packer">
                 <div id="foot_content">
@@ -157,6 +164,40 @@
             </div>
         </div>
     </div>
+    <dialog id="menuHolder">
+        <h1 id="menuClose"> &#x1F7A8; </h1>
+        <hr id="menuLine">
+        <div id="menuOtherLink">
+            <div id="menuNavHolder">
+                <a href="index.html" class="menuLink">
+                    <h1 class="menuNavigation">Home</h1>
+                </a>
+                <a href="meny.html" class="menuLink">
+                    <h1 class="menuNavigation">Meny</h1>
+                </a>
+                <a href="omOss.html" class="menuLink">
+                    <h1 class="menuNavigation">Om oss</h1>
+                </a>
+                <a href="location.html" class="menuLink">
+                    <h1 class="menuNavigation">Location</h1>
+                </a>
+                <a href="cart.html" class="menuLink">
+                    <h1 class="menuNavigation">Kurv</h1>
+                </a>
+            </div>
+            <div id="menuOther">
+                <a href="" class="link_line">
+                    <h1 class="menuOtherTitle">LEGAL</h1>
+                </a>
+                <a href="" class="link_line">
+                    <h1 class="menuOtherBtns">TERMS</h1>
+                </a>
+                <a href="" class="link_line">
+                    <h1 class="menuOtherBtns">TERMS</h1>
+                </a>
+            </div>
+        </div>
+    </dialog>
 </body>
 <script src="script.js"></script>
 </html>
