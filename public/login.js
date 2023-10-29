@@ -45,3 +45,4 @@ async function login() {
 if (sessionStorage.getItem("username") && sessionStorage.getItem("password")) {
     window.location.assign("bestillinger.html")
 } 
+
